@@ -167,32 +167,3 @@ if __name__ == '__main__':
         else:
             search_by_keyword(item,root_path,driver,login_flag)
     driver.close()
-    # try:
-    #     csv_name='test.csv'
-    #     list_res=[]
-    #     driver = webdriver.Chrome()
-    #     driver.get('https://www.taobao.com/')
-    #     total =login()
-    #     drop_down()
-    #     # 提取出100的数字
-    #     total = int(re.compile('(\d+)').search(total).group(1))
-    #     print('total page '+str(total))
-    #     for i in range(1, total):
-    #         print('page '+str(i))
-    #         list_data=get_products()
-    #         if(list_data):
-    #             list_res+=list_data            
-    #             time.sleep(2)
-    #             drop_down()
-    #             print('next....')
-    #             next_page(page_number=i+1)
-    #         else:
-    #             break
-
-    #     output_to_csv(list_res,csv_name)
-    # except Exception as e:
-    #     print(e)
-    #     output_to_csv(list_res,csv_name)
-    #     print("出错啦~")
-    # finally:
-    #     driver.close()
